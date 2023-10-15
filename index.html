@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КТ1 HTML5</title>
+</head>
+
+<body>
+    <div class="main">
+        <p>Choose storage:</p>
+        <select name="select" id="storageList">
+            <option value="local">localStorage</option>
+            <option value="session">sessionStorage</option>
+        </select>
+        <p>Key:</p>
+        <input type="text" id="ValueKey">
+        <p>Value:</p>
+        <input type="text" id="valueInput">
+    </div>
+    <input class="btn-primary" type="submit" value="Submit" onclick="saveItem()">
+    <input class="btn-erase" type="submit" value="Erase table" onclick="clearStorage()">
+    <table border="3px solid black">
+        <thead>
+            <tr>
+                <th>Key</th>
+                <th>Value</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
